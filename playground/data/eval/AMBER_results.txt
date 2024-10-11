@@ -1,0 +1,6 @@
+Generative Task:
+CHAIR:		 7.5
+Cover:		 50.9
+Hal:		 37.3
+Cog:		 3.2
+
