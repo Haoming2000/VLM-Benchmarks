@@ -3,7 +3,7 @@
 echo "model path: $1"
 
 ## MM-VET
-python -m scripts.v1_5.eval.interleave_vqa \
+python -m llava.eval.interleave_vqa \
     --model-path $1 \
     --question-file ./playground/data/eval/mm-vet/llava-mm-vet.jsonl \
     --image-folder /viscam/projects/SceneAug/haoming/mm-vet \
@@ -22,7 +22,7 @@ cd ../../../..
 
 ## MME
 
-python -m scripts.v1_5.eval.interleave_vqa \
+python -m llava.eval.interleave_vqa \
     --model-path $1 \
     --question-file ./playground/data/eval/MME/llava_mme.jsonl \
     --image-folder /viscam/projects/SceneAug/haoming/MME_Benchmark_release_version \
@@ -39,7 +39,7 @@ python calculation.py --results_dir answers/llava-interleave-qwen-0.5b-hf
 cd ../../../../..
 
 ## POPE
-python -m scripts.v1_5.eval.interleave_vqa \
+python -m llava.eval.interleave_vqa \
     --model-path $1 \
     --question-file ./playground/data/eval/pope/llava_pope_test.jsonl \
     --image-folder /viscam/projects/SceneAug/haoming/val2014 \
@@ -88,7 +88,7 @@ python llava/eval/eval_pope.py \
 # python scripts/convert_vqav2_for_submission.py --split $SPLIT --ckpt $CKPT
 
 ## Viswiz
-python -m scripts.v1_5.eval.interleave_vqa \
+python -m llava.eval.interleave_vqa \
     --model-path $1 \
     --question-file ./playground/data/eval/vizwiz/llava_test.jsonl \
     --image-folder /viscam/projects/SceneAug/haoming/vizwiz/test/test \
@@ -124,7 +124,7 @@ python scripts/convert_vizwiz_for_submission.py \
 
 ## AMBER
 
-python -m scripts.v1_5.eval.interleave_vqa \
+python -m llava.eval.interleave_vqa \
     --model-path llava-hf/llava-interleave-qwen-0.5b-hf \
     --question-file ./AMBER-master/data/query/query_all.jsonl \
     --image-folder /viscam/projects/SceneAug/haoming/amber \

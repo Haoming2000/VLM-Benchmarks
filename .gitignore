@@ -1,3 +1,10 @@
+# default to excluding data
+*.zip
+
+# default to excluding images (for safety)
+*.png
+*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
