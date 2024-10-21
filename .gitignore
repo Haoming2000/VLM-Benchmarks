@@ -1,3 +1,8 @@
+.cache/
+image/
+playground/
+AMBER-master/results/
+
 # default to excluding data
 *.zip
 
